@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <style>
+
+        li {
+            color: red;
+            font-size: 16px;
+        }
+
+        nav {
+            display: inline-block;
+            width: 80%;
+        }
+
+        nav img {
+            width: 10%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 40% 40%;
+            gap: 20px;
+            justify-content: center;             
+            align-items: center;             
+            row-gap: 30px; 
+        }
+
+        .grid img {
+            width: 100%;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-around; 
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content">Перейти к основному содержанию</a>
+
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+        <img src="https://via.placeholder.com/100" alt="Пример изображения">
+    </nav>
+
+    <main id="main-content">
+        <h1>Основное содержимое страницы</h1>
+        <p>Здесь будет основная информация о сайте.</p>
+    </main>
+
+    <section class="grid">
+        <div>
+            <h2>Колонка 1</h2>
+            <img src="https://via.placeholder.com/300" alt="Изображение 1">
+        </div>
+        <div>
+            <h2>Колонка 2</h2>
+            <img src="https://via.placeholder.com/300" alt="Изображение 2">
+        </div>
+    </section>
+
+    <section class="flex">
+        <div>
+            <h2>Элемент 1</h2>
+            <img src="https://via.placeholder.com/100" alt="Изображение 1">
+        </div>
+        <div>
+            <h2>Элемент 2</h2>
+            <img src="https://via.placeholder.com/100" alt="Изображение 2">
+        </div>
+        <div>
+            <h2>Элемент 3</h2>
+            <img src="https://via.placeholder.com/100" alt="Изображение 3">
+        </div>
+    </section>
+</body>
+</html>
